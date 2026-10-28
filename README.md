@@ -12,6 +12,12 @@ Six days later (around October 20), a project called **CicaTavern** started prom
 
 Everything below links to public material. His repository has been forked as an archive at **[advnljs/CicaTavern](https://github.com/advnljs/CicaTavern)** (frozen at `14a14e9`, v2.0.2, 48 commits), so the evidence stays even if the original changes.
 
+## Read the evidence
+
+- **[Full statement (English)](statement/statement-en.md)**, also as [PDF](statement/statement-en.pdf). The original Chinese version: [PDF](statement/statement-zh.pdf).
+- **[29 suspicious points, graded (English)](list/suspicious-points-en.md)**. Chinese: [PDF](list/suspicious-points-zh.pdf).
+- **[Side-by-side comparison cards](comparison/)**: features and UI copy, ours vs. his.
+
 ![Overview of nine replication points](comparison/card-00.png)
 
 ## 1. The timeline does not add up
@@ -75,8 +81,8 @@ If it was inspired by Narrascape, say so in the README. Taking inspiration is no
 
 | Folder | What is inside |
 |---|---|
-| [`statement/`](statement/) | Full statement in Chinese (`statement-zh.pdf`, source `index.html`) with a screenshot appendix |
-| [`list/`](list/) | 29 graded suspicious points in Chinese (`suspicious-points-zh.pdf`) |
+| [`statement/`](statement/) | Full statement: [English](statement/statement-en.md) ([PDF](statement/statement-en.pdf)) and [Chinese PDF](statement/statement-zh.pdf), each with a screenshot appendix |
+| [`list/`](list/) | 29 graded suspicious points: [English](list/suspicious-points-en.md) and [Chinese PDF](list/suspicious-points-zh.pdf) |
 | [`comparison/`](comparison/) | Overview card + 9 side-by-side cards (features and UI copy) |
 | [`xiaohongshu/`](xiaohongshu/) | The 17-image Xiaohongshu post and its caption |
 | [`evidence/their-repo/`](evidence/their-repo/) | Screenshots of his GitHub pages taken Oct 27, 2026; the v2.0.3 changelog text |

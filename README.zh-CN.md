@@ -12,6 +12,12 @@
 
 下面每一条都链接到公开材料。他的仓库已 fork 存档：**[advnljs/CicaTavern](https://github.com/advnljs/CicaTavern)**（停在 `14a14e9`，2.0.2，48 个提交），原仓库之后怎么改，这份都还在。
 
+## 证据文档
+
+- **[完整声明（中文 PDF）](statement/statement-zh.pdf)**；英文版：[Markdown](statement/statement-en.md) / [PDF](statement/statement-en.pdf)。
+- **[29 项分级可疑点清单（中文 PDF）](list/suspicious-points-zh.pdf)**；英文版：[Markdown](list/suspicious-points-en.md)。
+- **[左右对照图](comparison/)**：功能和界面文案，我们 vs. 他。
+
 ![9 处复刻总览](comparison/card-00.png)
 
 ## 一、时间对不上
@@ -75,8 +81,8 @@ CicaTavern 在我们宣传片发出后第 5 天（10 月 19 日）加上“四�
 
 | 目录 | 内容 |
 |---|---|
-| [`statement/`](statement/) | 完整声明（`statement-zh.pdf`，源文件 `index.html`），含截图附录 |
-| [`list/`](list/) | 29 项分级可疑点清单（`suspicious-points-zh.pdf`） |
+| [`statement/`](statement/) | 完整声明：[中文 PDF](statement/statement-zh.pdf)、[英文](statement/statement-en.md)（[PDF](statement/statement-en.pdf)），均含截图附录 |
+| [`list/`](list/) | 29 项分级可疑点清单：[中文 PDF](list/suspicious-points-zh.pdf)、[英文](list/suspicious-points-en.md) |
 | [`comparison/`](comparison/) | 总览 + 9 张功能与文案对照图 |
 | [`xiaohongshu/`](xiaohongshu/) | 小红书 17 张图和文案 |
 | [`evidence/their-repo/`](evidence/their-repo/) | 他 GitHub 页面截图（2026-10-27 截取）、2.0.3 更新说明原文 |

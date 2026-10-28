@@ -1,0 +1,305 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><title>Copied, then called original</title><style>.anchor,.octicon{display:none!important}.markdown-heading{display:block}@page{size:A4;margin:16mm 16mm 16mm 16mm}
+body{margin:0;color:#1f1a17;font:10.2pt/1.6 -apple-system,"Helvetica Neue","PingFang SC",sans-serif}
+h1{font-size:22pt;margin:0 0 4pt}h1+p em{color:#6b625b}
+h2{font-size:13.5pt;margin:18pt 0 6pt;padding-left:8pt;border-left:4pt solid #b4532a;page-break-after:avoid}
+h3{font-size:11.5pt;margin:12pt 0 4pt}
+p{margin:5pt 0}ul,ol{margin:4pt 0 6pt;padding-left:18pt}li{margin:2pt 0}
+table{width:100%;border-collapse:collapse;margin:6pt 0 8pt;font-size:8.8pt;line-height:1.45}
+tr{page-break-inside:avoid}th,td{border:.6pt solid #e3dad2;padding:4pt 6pt;vertical-align:top;text-align:left}th{background:#f7efe8}
+img{max-width:100%;border:.6pt solid #e3dad2;border-radius:4px;page-break-inside:avoid}
+a{color:#b4532a;text-decoration:none}code{font-size:9pt;background:#f3eee8;padding:0 3px;border-radius:3px}
+hr{border:0;border-top:.6pt solid #e3dad2;margin:14pt 0}h2#appendix-screenshots,hr{page-break-before:always}
+p:has(> img){page-break-inside:avoid}</style></head><body><div class="markdown-heading"><h1 class="heading-element">Copied, then called original</h1><a id="user-content-copied-then-called-original" class="anchor" aria-label="Permalink: Copied, then called original" href="#copied-then-called-original"><span aria-hidden="true" class="octicon octicon-link"></span></a></div>
+<p><em>About CicaTavern · the Narrascape team · October 27, 2026 · <a href="https://narrascape.space" rel="nofollow">narrascape.space</a></em></p>
+<p>We are Narrascape, a small team making an AI tabletop / interactive-fiction game that runs in the browser. We spent years thinking about the idea. From June 2026 we built it behind closed doors for nearly half a year, with no promotion. <strong>On October 14 we published our first promo video. Six days later (around October 20), the same selling points showed up on Xiaohongshu.</strong></p>
+<p><strong>Our conclusion: we believe CicaTavern copied Narrascape.</strong> Not the code: the features and the selling points. Even our mischievous streak was copied, without any idea of what it is there for.</p>
+<p><strong>Where the material comes from</strong></p>
+<ul>
+<li>
+<strong>Our own development history:</strong> the team's own account.</li>
+<li>
+<strong>Evidence for the comparison:</strong> public material only.
+<ul>
+<li>
+<strong>Ours:</strong> our first promo video, published October 14, and the changelog inside the app (✦ in the top bar of narrascape.space).</li>
+<li>
+<strong>His:</strong> his promo note and video on Xiaohongshu, and his public repository: code, commits, README and issues. Screenshots of each are in the appendix.</li>
+</ul>
+</li>
+</ul>
+<p>A point-by-point comparison is in the companion document, <a href="../list/suspicious-points-en.md">Suspicious points</a>.</p>
+<div class="markdown-heading"><h2 class="heading-element">1. Nearly half a year vs. one week</h2><a id="user-content-1-nearly-half-a-year-vs-one-week" class="anchor" aria-label="Permalink: 1. Nearly half a year vs. one week" href="#1-nearly-half-a-year-vs-one-week"><span aria-hidden="true" class="octicon octicon-link"></span></a></div>
+<p>Do the arithmetic:</p>
+<ul>
+<li>From June 15 to October 17, more than four months, we built this whole set one feature at a time.</li>
+<li>Four days after our video, his first version came out. On the fifth day he added the four choices.</li>
+<li>His entire public record covers ten days: 30 versions, over 70,000 lines. On October 18 alone there were 20 commits and 6 versions; the Android app, the exe launcher and in-app updates all came out the same day.</li>
+</ul>
+<p>He will probably say it was "already written". But:</p>
+<ul>
+<li>There is no earlier trace of CicaTavern development in any of his public GitHub repositories.</li>
+<li>The first version arrived as one finished 17,472-line commit, with no development history at all.</li>
+</ul>
+<p>An "already written" that cannot be shown does not count.</p>
+<p>We have forked his commit history as an archive: original at <a href="https://github.com/Shikasar7/CicaTavern">github.com/Shikasar7/CicaTavern</a>, archive at <strong><a href="https://github.com/advnljs/CicaTavern">github.com/advnljs/CicaTavern</a></strong>, frozen at v2.0.2 (commit <code>14a14e9</code>, 48 commits). Every commit and version cited here refers to that archive. Deleting things now will not help.</p>
+<p>That leaves one explanation: this whole set was "thought of" in the week or so after our video. Coming up in a week with what took us nearly half a year, and so close that it even includes a transgression choice he has no use for, is not plausible.</p>
+<p><strong>Either he is a genius who happened to come up with our entire set in the same month, or he saw the answers. We lean toward the second. If we are wrong, show the development history from before October 18. If it cannot be shown, stop calling it a coincidence.</strong></p>
+<div class="markdown-heading"><h2 class="heading-element">2. His features have no history</h2><a id="user-content-2-his-features-have-no-history" class="anchor" aria-label="Permalink: 2. His features have no history" href="#2-his-features-have-no-history"><span aria-hidden="true" class="octicon octicon-link"></span></a></div>
+<p>Our features grew bit by bit. His appeared out of nowhere, already finished.</p>
+<ul>
+<li>
+<strong>Illustrations, character roster, character reference images, art style, read-aloud, background generation:</strong> all of them appeared together in the single v1.0.0 commit on October 18. The image and voice code alone is 2,489 lines, and 551 lines of tests were written along with it. Each feature was complete the first time it appeared; there was no "make a simple version, then improve it" stage.</li>
+<li>
+<strong>Four action choices:</strong> added on October 19 in v1.6.0 as one toggle of a preset, in a single line. No reason for adding them, and no reason why exactly four or why one must be "surprising".</li>
+<li>
+<strong>His issue tracker:</strong> 4 entries to date, the earliest on October 20: an import error, a request for search, a provider suggestion and a security patch. Nobody asked for four choices, illustrations or consistent character looks.</li>
+</ul>
+<p>No user asked for it, no trial and error, no reason, the whole set at once, and that set is this close to ours.</p>
+<p><strong>A feature with no history has only two possible origins: it fell from the sky, or it was built from someone else's finished product.</strong></p>
+<p>No iteration, no reason, done in one go. That is not development; that is handing in a copied answer sheet.</p>
+<div class="markdown-heading"><h2 class="heading-element">3. Seven selling points, and we shipped every one first</h2><a id="user-content-3-seven-selling-points-and-we-shipped-every-one-first" class="anchor" aria-label="Permalink: 3. Seven selling points, and we shipped every one first" href="#3-seven-selling-points-and-we-shipped-every-one-first"><span aria-hidden="true" class="octicon octicon-link"></span></a></div>
+<table>
+<thead>
+<tr>
+<th>Feature</th>
+<th>Narrascape (public date, changelog wording)</th>
+<th>CicaTavern (first appearance)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Four choices per turn, one of them out of bounds</td>
+<td>Finalized Aug 25 (team account); the highlight of our Oct 14 video</td>
+<td>v1.6.0, Oct 19</td>
+</tr>
+<tr>
+<td>Turn illustrations</td>
+<td>Oct 11: "turn illustrations… generated on demand from a button under each turn"</td>
+<td>v1.0.0, Oct 18</td>
+</tr>
+<tr>
+<td>Fixed character looks, illustrations drawn from them</td>
+<td>Oct 11: "avatar and standing portrait generated together, in one style"; Oct 12: "illustrations refer to each character's own portrait… characters stay consistent"</td>
+<td>v1.0.0, Oct 18: roster reference images, no mixed-up faces. Standing portraits only on Oct 20, avatar generation only on Oct 22</td>
+</tr>
+<tr>
+<td>One art style per world</td>
+<td>Oct 12: "each world uses one art style"</td>
+<td>v1.0.0, Oct 18: an art style per card</td>
+</tr>
+<tr>
+<td>One-tap read-aloud</td>
+<td>Shipped Sep 6 (team account); a read-aloud button is on screen in our Oct 14 video</td>
+<td>v1.0.0, Oct 18</td>
+</tr>
+<tr>
+<td>Jobs finish in the background, closing the page doesn't stop them</td>
+<td>Oct 13: "image jobs finish in the background; closing the page no longer interrupts them"</td>
+<td>v1.0.0, Oct 18: switch away or refresh and the turn still finishes</td>
+</tr>
+<tr>
+<td>Old versions kept after a redraw, can switch back</td>
+<td>Oct 17: "past portraits can be viewed and set as default"</td>
+<td>v2.0.0 "draw history", Oct 27</td>
+</tr>
+</tbody>
+</table>
+<p>How far we led varies: a few days for illustrations and portraits, six weeks for read-aloud, nearly two months for the transgression choice, four months for the frozen baseline. <strong>His all arrive bunched together, 4 to 13 days after our October 14 video.</strong></p>
+<p>Any single item could be called "something everyone has". One collision is a coincidence. <strong>Seven collisions means the GPS was set to our house.</strong></p>
+<p>Even the changelog was only one day behind: ours went into the top bar on October 19, and his v1.8.0 got "What's new" on October 20.</p>
+<div class="markdown-heading"><h2 class="heading-element">4. Every one of our features has a reason</h2><a id="user-content-4-every-one-of-our-features-has-a-reason" class="anchor" aria-label="Permalink: 4. Every one of our features has a reason" href="#4-every-one-of-our-features-has-a-reason"><span aria-hidden="true" class="octicon octicon-link"></span></a></div>
+<table>
+<thead>
+<tr>
+<th>When</th>
+<th>What we built</th>
+<th>Why</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Years before</td>
+<td>The idea: an AI that runs a living world, where players can cross the line and can be stopped</td>
+<td>Team account</td>
+</tr>
+<tr>
+<td>Jun 15</td>
+<td>Day one: choices every turn; the space-time judge and the "action restriction" setting</td>
+<td>Stories need limits. Teleporting, one-shot kills, things beyond your ability get stopped by the judge, and you decide how strict it is</td>
+</tr>
+<tr>
+<td>Jun 16</td>
+<td>Frozen baseline: the setup is frozen into a fixed baseline at the start, the conversation is append-only, and whatever changes each turn goes last. Plus: a full world from a few lines</td>
+<td>The first hits the cache every turn, which is cheaper and faster; the second lets people start without writing pages of setup</td>
+</tr>
+<tr>
+<td>Jul 14</td>
+<td>Site launched, no promotion</td>
+<td>Let a few people play and improve as we go</td>
+</tr>
+<tr>
+<td>Aug 25</td>
+<td>Transgression choice finalized: three normal choices, the fourth deliberately out of bounds</td>
+<td>To bait players into the judge and then point them to settings to loosen it (next section)</td>
+</tr>
+<tr>
+<td>Sep 6</td>
+<td>Automatic read-aloud</td>
+<td>For livestreams: the streamer plays while the story is read aloud for viewers</td>
+</tr>
+<tr>
+<td>Oct 11–17</td>
+<td>Turn illustrations, character portraits, illustrations drawn from portraits, one art style, background jobs, portrait history</td>
+<td>Five rounds of changes in one week, each recorded in the changelog</td>
+</tr>
+<tr>
+<td>Oct 14</td>
+<td>First public promo video</td>
+<td>Six days later, the same selling points were on Xiaohongshu</td>
+</tr>
+</tbody>
+</table>
+<p>Illustrations alone show in the changelog how a feature grows:</p>
+<ul>
+<li>
+<strong>Oct 11:</strong> turn illustrations ship; the same day they become a button under each turn, generated when wanted.</li>
+<li>
+<strong>Oct 12:</strong> illustrations follow each character's own portrait so people stay consistent; one art style per world; queueing when the image service is busy; automatic retry when a safety check occasionally refuses.</li>
+<li>
+<strong>Oct 13:</strong> image jobs move to the background and survive closing the page; finished illustrations can be redrawn.</li>
+<li>
+<strong>Oct 16:</strong> images cached locally for faster reopening; larger avatars in the character list.</li>
+<li>
+<strong>Oct 17:</strong> character portraits get multiple versions; old ones can be viewed and restored.</li>
+</ul>
+<p>Build it, watch how players use it, fix whatever is awkward. <strong>That is how features grow.</strong></p>
+<div class="markdown-heading"><h2 class="heading-element">5. The transgression choice: copied without knowing why</h2><a id="user-content-5-the-transgression-choice-copied-without-knowing-why" class="anchor" aria-label="Permalink: 5. The transgression choice: copied without knowing why" href="#5-the-transgression-choice-copied-without-knowing-why"><span aria-hidden="true" class="octicon octicon-link"></span></a></div>
+<p>Narrascape has an interceptor called the space-time judge. When you make the protagonist do something beyond their ability or against the world's rules, it stops it. The turn doesn't happen, a dialog explains why, and it ends with a hint: "You can adjust or turn off the action restriction in Game Settings." Settings has four levels: strict, standard, loose, and fully unrestricted.</p>
+<p>The transgression choice is designed around that interceptor. The first three choices are normal paths; <strong>the fourth is deliberately out of bounds</strong>, the thing you most want to do right now but normally would not dare:</p>
+<ul>
+<li>Sometimes it works, and the story explodes.</li>
+<li>Sometimes the judge stops it, and the dialog tells you: if this is too strict, loosen it in settings.</li>
+</ul>
+<p>Its purpose is to lure players into the interceptor. After a few collisions they go to settings, loosen the limit or turn it off entirely, and discover how far this world will go with them. It is the part of our promo video that got the most laughs:</p>
+<p><a target="_blank" rel="noopener noreferrer" href="our-choices.jpg"><img src="our-choices.jpg" alt="Narrascape choices" style="max-width: 100%;"></a></p>
+<p><em>Narrascape's October 14 video. Left, choice 4: "throw the whole bowl of hot soup at the two beams of light". Right, choice 4: "shout in the street that Zhou Henian will die after the cold wave". The same frame shows the turn illustration and the read-aloud button.</em></p>
+<p>Now look at his:</p>
+<ul>
+<li>
+<strong>October 18, v1.0.0:</strong> no choice feature of its own; it only shows choices that come with a character card as buttons.</li>
+<li>
+<strong>October 19, the fifth day after our video:</strong> suddenly built-in "four action choices", with a prompt that says "the four go in different directions, at least one is surprising".</li>
+</ul>
+<p>Exactly four, one of them deliberately breaking expectations. That is our transgression choice under a different name.</p>
+<p><strong>The problem: CicaTavern has no interceptor at all.</strong></p>
+<p>No judge, no action restriction, no "loosen it in settings" step; whatever the model writes, goes. A "surprising" choice there has nothing to run into and nothing to unlock. It is decoration.</p>
+<p><a target="_blank" rel="noopener noreferrer" href="his-choices.jpg"><img src="his-choices.jpg" alt="CicaTavern choices" style="max-width: 100%;"></a></p>
+<p><em>CicaTavern's promo video (around 00:38). Buttons A to D look identical, and the "surprising" fourth one is a joke.</em></p>
+<p>That is copying the outline without understanding it. Our mischievous streak has a purpose; it grew out of the interceptor. He copied what it looks like without knowing where the mechanism comes from. Without the interceptor, the fourth choice is just an outrageous button.</p>
+<div class="markdown-heading"><h2 class="heading-element">6. Caching: a design we already ran, and a number users can't get</h2><a id="user-content-6-caching-a-design-we-already-ran-and-a-number-users-cant-get" class="anchor" aria-label="Permalink: 6. Caching: a design we already ran, and a number users can't get" href="#6-caching-a-design-we-already-ran-and-a-number-users-cant-get"><span aria-hidden="true" class="octicon octicon-link"></span></a></div>
+<p>The "fixed prefix, append only at the end" that his video sells as its top technical feature is what we had been doing since June 16. Internally we call it the <strong>frozen baseline</strong>: freeze a baseline at the start, append only after that, and put whatever changes each turn at the end.</p>
+<p>His approach has the same three parts: fixed prefix, append-only, changing material last. Ours was running in production from our July launch, three months earlier. In his hands it became the loudest selling point of his video.</p>
+<div class="markdown-heading"><h3 class="heading-element">Tonight he followed one more: a context meter and auto-compaction</h3><a id="user-content-tonight-he-followed-one-more-a-context-meter-and-auto-compaction" class="anchor" aria-label="Permalink: Tonight he followed one more: a context meter and auto-compaction" href="#tonight-he-followed-one-more-a-context-meter-and-auto-compaction"><span aria-hidden="true" class="octicon octicon-link"></span></a></div>
+<p>At 21:42 on October 27 he released v2.0.3: the top bar shows how much context the conversation uses and the limit, compacts automatically before the next turn once a threshold is reached, and lets you set the limit in settings.</p>
+<p>In our app, the "Context usage" item in the turn-process panel reads: the context actually sent to the model this turn / the context window limit; only when it would exceed the limit is it consolidated into long-term memory, keeping the most recent stretch; the limit can be adjusted in Game Settings.</p>
+<table>
+<thead>
+<tr>
+<th></th>
+<th>Narrascape (wording in the app)</th>
+<th>CicaTavern v2.0.3</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>What it shows</td>
+<td>"current context / the context window you set"</td>
+<td>used / limit, changes color at the threshold</td>
+</tr>
+<tr>
+<td>Where usage comes from</td>
+<td>"usage returned by the model API": input + output of the last request</td>
+<td>tokens actually counted in the last turn</td>
+</tr>
+<tr>
+<td>When it compacts</td>
+<td>"automatically, only when the next turn would exceed the window"</td>
+<td>after the threshold, before sending the next turn</td>
+</tr>
+<tr>
+<td>Who sets the limit</td>
+<td>"max raw context window" in Game Settings</td>
+<td>a number entered for the model in settings</td>
+</tr>
+<tr>
+<td>What it becomes</td>
+<td>long-term memory, keeping the most recent stretch</td>
+<td>a story archive, continuing from the last few turns</td>
+</tr>
+</tbody>
+</table>
+<p>Our context consolidation already had a round of fixes in the October 18 changelog. He added his late on October 27. A few words changed, same meaning. Even people copying homework know to reword it.</p>
+<p><em>v2.0.3 came out after our fork archive, as commit <code>d7974cb</code> in the original repository; we archived its release notes separately.</em></p>
+<p>Then the number. The most prominent claim in his video is "measured cache hit rate up to 97%", with small print saying it used an official Claude Opus 5.5 subscription.</p>
+<p>His README says:</p>
+<ul>
+<li>The two Claude rows come from <strong>the author's personal setup</strong>, running through Claude Code.</li>
+<li>Elsewhere the same README says a Claude subscription <strong>cannot be used as an API key</strong>.</li>
+<li>The DeepSeek row also shows 97%, over 13 turns.</li>
+</ul>
+<p>In plain terms: the biggest number in his video was measured in a setup CicaTavern users cannot use. Quick to copy features, and willing to pick the flattering numbers too.</p>
+<div class="markdown-heading"><h2 class="heading-element">7. Don't rush to post a code comparison</h2><a id="user-content-7-dont-rush-to-post-a-code-comparison" class="anchor" aria-label="Permalink: 7. Don't rush to post a code comparison" href="#7-dont-rush-to-post-a-code-comparison"><span aria-hidden="true" class="octicon octicon-link"></span></a></div>
+<p>We never said he copied code. We read it: a different tech stack, and diligently written.</p>
+<p>But anyone can rewrite something in another stack these days. What is valuable was never the code; it is the idea: what to build, why, and in what order. All of that was in our video and our app in mid-October, in plain view of anyone, including him.</p>
+<p>He took the surface. What he could not take is the reason behind each feature:</p>
+<ul>
+<li>the transgression choice exists to make players hit the interceptor and then loosen it in settings;</li>
+<li>read-aloud exists because livestreams need it;</li>
+<li>illustrations took five rounds of changes in one week to get right.</li>
+</ul>
+<p>He only copied the buttons.</p>
+<p>Put plainly, this is copied homework: the answers copied fast, the questions not understood. The transgression choice was the answer to a question posed by the interceptor. He took the answer; the question stayed with us.</p>
+<div class="markdown-heading"><h2 class="heading-element">8. We want an explanation</h2><a id="user-content-8-we-want-an-explanation" class="anchor" aria-label="Permalink: 8. We want an explanation" href="#8-we-want-an-explanation"><span aria-hidden="true" class="octicon octicon-link"></span></a></div>
+<ol>
+<li>The first version was a finished 17,472-line commit. Where is the development history from before October 18? Can it be shown?</li>
+<li>v1.0.0 had no built-in four choices; they arrived on October 19, with one reserved for "surprising". What does a product with no interceptor need that choice for? Does it have anything to do with our October 14 video?</li>
+<li>Before building all of this, had you played narrascape.space or watched our video?</li>
+</ol>
+<p>If it was copied, admit it: one line in the README saying "inspired by Narrascape", and this is over. There is no shame in learning from others; the shame is in pretending not to know them.</p>
+<p>Every indie developer knows how many late nights it takes for a feature to go from idea to working to polished to on video. A few days later it shows up under another name as a selling point in someone else's video, pitched to the same players as "less hassle". We are not letting that go.</p>
+<p><strong>Originals are not afraid of comparison. Play both, tap the fourth choice, and see whether it gets stopped and what happens after. Which one is the original and which one is a tracing becomes obvious with one tap.</strong></p>
+<p>— Narrascape · <a href="https://narrascape.space" rel="nofollow">narrascape.space</a></p>
+<hr>
+<div class="markdown-heading"><h2 class="heading-element">Appendix: screenshots</h2><a id="user-content-appendix-screenshots" class="anchor" aria-label="Permalink: Appendix: screenshots" href="#appendix-screenshots"><span aria-hidden="true" class="octicon octicon-link"></span></a></div>
+<p>All screenshots below are from his public GitHub pages and videos, taken October 27, 2026. GitHub groups commits by UTC: "Oct 17" at 17:30 UTC is 01:30 on October 18 in UTC+8.</p>
+<p>The nine side-by-side comparison cards (features and UI copy) are in <a href="../comparison/"><code>../comparison/</code></a>.</p>
+<p><strong>0. His Xiaohongshu promo note, around October 20</strong></p>
+<p><a target="_blank" rel="noopener noreferrer" href="his-xhs-note.png"><img src="his-xhs-note.png" alt="His Xiaohongshu note" style="max-width: 100%;"></a></p>
+<p><em>Marked "7 days ago" when captured on October 27.</em></p>
+<p><strong>1. The first commits: Initial commit, then straight to v1.0.0</strong></p>
+<p><a target="_blank" rel="noopener noreferrer" href="g1a-first-commits.png"><img src="g1a-first-commits.png" alt="First commits" style="max-width: 100%;"></a></p>
+<p><em>At the bottom is the Initial commit (only a LICENSE and a one-line README), followed immediately by CicaTavern 1.0.0 and several more versions the same day.</em></p>
+<p><strong>2. v1.0.0: 72 files, 17,472 lines, one commit</strong></p>
+<p><a target="_blank" rel="noopener noreferrer" href="g2-100-17472.png"><img src="g2-100-17472.png" alt="v1.0.0 commit" style="max-width: 100%;"></a></p>
+<p><em>Illustrations, character roster, art style, read-aloud, background generation, all in this one commit.</em></p>
+<p><strong>3. v1.6.0 on October 19: four choices, "at least one is surprising"</strong></p>
+<p><a target="_blank" rel="noopener noreferrer" href="g3-basic-four-choices.png"><img src="g3-basic-four-choices.png" alt="Four choices code" style="max-width: 100%;"></a></p>
+<p><em><code>server/basic.mjs</code> lines 101–108. The fifth day after our video.</em></p>
+<p><strong>4. v2.0.0 and v2.0.3 on October 27: draw history, context meter</strong></p>
+<p><a target="_blank" rel="noopener noreferrer" href="g4-200-draw-history.png"><img src="g4-200-draw-history.png" alt="v2.0.0" style="max-width: 100%;"></a></p>
+<p><a target="_blank" rel="noopener noreferrer" href="g5-203-context-meter.png"><img src="g5-203-context-meter.png" alt="v2.0.3" style="max-width: 100%;"></a></p>
+<p><em>We shipped "past portraits can be viewed and restored" on October 17; our app had context usage and automatic consolidation long before.</em></p>
+<p><strong>5. The 97% in his README: the author's personal setup via Claude Code</strong></p>
+<p><a target="_blank" rel="noopener noreferrer" href="g6-readme-97.png"><img src="g6-readme-97.png" alt="README 97%" style="max-width: 100%;"></a></p>
+<p><em>README lines 37–45, the source of the biggest number in his video.</em></p>
+<p><strong>6. The selling points his video emphasizes</strong></p>
+<p><a target="_blank" rel="noopener noreferrer" href="his-video-endcard.jpg"><img src="his-video-endcard.jpg" alt="End card" style="max-width: 100%;"></a></p>
+<p><em>End card: background generation, high cache hit rate, SillyTavern card compatibility, built-in basic preset, native status bar, one-tap illustration and read-aloud, custom character looks, guided card creation.</em></p>
+<p><a target="_blank" rel="noopener noreferrer" href="his-video-pictures-voices.jpg"><img src="his-video-pictures-voices.jpg" alt="Pictures and voices" style="max-width: 100%;"></a></p>
+<p><em>"One-tap illustration, one-tap read-aloud"</em></p>
+<p><a target="_blank" rel="noopener noreferrer" href="his-video-cache97.jpg"><img src="his-video-cache97.jpg" alt="Cache 97%" style="max-width: 100%;"></a></p>
+<p><em>"Fixed prefix, append only at the end", cache hit rate 97%</em></p>
+<p><strong>7. Issues: 3 in total, nobody asked for these features</strong></p>
+<p><a target="_blank" rel="noopener noreferrer" href="g7-issues.png"><img src="g7-issues.png" alt="Issues" style="max-width: 100%;"></a></p>
+<p><em>Plus one security-patch pull request, 4 entries in all.</em></p>
+</body></html>
