@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<title>CicaTavern 可疑点清单</title>
+<style>
+  @page { size: A4; margin: 18mm 16mm 18mm 16mm; }
+  :root { --ink:#1f1a17; --muted:#6b625b; --line:#e3dad2; --accent:#b4532a; --soft:#f7efe8; --strong:#b4532a; --mid:#a07a2c; --weak:#8a8580; }
+  * { box-sizing: border-box; }
+  body { margin:0; color:var(--ink); background:#fff; font: 10.5pt/1.75 "PingFang SC","Hiragino Sans GB","Songti SC",sans-serif; }
+  h1 { font-size: 20pt; line-height:1.35; margin: 0 0 6pt; letter-spacing:.5pt; }
+  .sub { color:var(--muted); font-size:9.5pt; margin-bottom:14pt; }
+  h2 { font-size: 13.5pt; margin: 18pt 0 6pt; padding-left: 8pt; border-left: 4pt solid var(--accent); }
+  h3 { font-size: 11.5pt; margin: 12pt 0 4pt; }
+  p { margin: 5pt 0; }
+  ul, ol { margin: 4pt 0 6pt; padding-left: 18pt; }
+  li { margin: 2pt 0; }
+  b, strong { color:#000; }
+  .lead { font-size: 11.5pt; background: var(--soft); border-radius: 6pt; padding: 10pt 12pt; margin: 10pt 0; }
+  .ph { background:#fff3b0; padding: 0 3pt; border-radius:3pt; }
+  table { width:100%; border-collapse: collapse; margin: 6pt 0 8pt; font-size: 9pt; line-height:1.5; page-break-inside:auto; }
+  tr { page-break-inside: avoid; }
+  th, td { border: .6pt solid var(--line); padding: 4pt 5pt; vertical-align: top; text-align:left; }
+  th { background: var(--soft); font-weight: 600; }
+  td.n { width: 18pt; text-align:center; color:var(--muted); }
+  .tag { display:inline-block; padding: 0 5pt; border-radius: 8pt; font-size: 8pt; color:#fff; white-space:nowrap; }
+  .s { background: var(--strong); } .m { background: var(--mid); } .w { background: var(--weak); }
+  .src { display:inline-block; padding: 0 4pt; border:.6pt solid var(--line); border-radius: 4pt; font-size: 7.5pt; color: var(--muted); white-space:nowrap; }
+  .note { color: var(--muted); font-size: 8.5pt; }
+  .box { border: .8pt solid var(--line); border-radius: 6pt; padding: 8pt 11pt; margin: 8pt 0; }
+  .end { margin-top: 14pt; font-weight: 600; }
+  .appendix { page-break-before: always; }
+</style>
+</head>
+<body>
+<div>
+<h1>CicaTavern 可疑点清单（29 项）</h1>
+<div class="sub">Narrascape 团队 · 2026 年 10 月 27 日 · 配套声明《抄就抄了，别装原创》</div>
+<p class="note">只列有公开依据的条目。</p>
+<ul class="note">
+  <li>Narrascape 的依据有两种：<b>宣传片</b>（10 月 14 日发布）和 <b>app 更新日志</b>（narrascape.space 顶栏 ✦）。</li>
+  <li>CicaTavern 的依据是他的小红书笔记和宣传片，以及公开的 CHANGELOG、GitHub 提交、README、issue；功能看的是第一次出现的版本。</li>
+  <li>他的仓库已 fork 存档：<b>github.com/advnljs/CicaTavern</b>（10-27 存档，停在 2.0.2 / 提交 14a14e9），清单里的提交和版本都以这份为准。原仓库：github.com/Shikasar7/CicaTavern。</li>
+</ul>
+<p class="note">强度：<span class="tag s">强</span> 时间上紧咬，而且对方事先没有这个功能；<span class="tag m">中</span> 我方明显更早；<span class="tag w">弱</span> 品类常见，或只是说法相近。</p>
+
+<h3>A. 时间节点</h3>
+<table>
+  <tr><th class="n">#</th><th style="width:28%">可疑点</th><th style="width:31%">Narrascape</th><th>CicaTavern</th><th style="width:30pt">强度</th></tr>
+  <tr><td class="n">1</td><td>我们发宣传片 4 天后，他的仓库创建</td><td>10-14 第一支宣传片发布 <span class="src">宣传片</span></td><td>10-18 01:30 GitHub 仓库创建</td><td><span class="tag m">中</span></td></tr>
+  <tr><td class="n">2</td><td>我们发宣传片 6 天后，他的小红书宣传笔记</td><td>—</td><td>10-20 前后发布（10-27 截图显示“7 天前”），主打四个行动选项、配图朗读、缓存命中等</td><td><span class="tag m">中</span></td></tr>
+  <tr><td class="n">3</td><td>第一个版本一次性端出</td><td>—</td><td>1.0.0 一次性提交 17,472 行；当天 20 个提交、6 个版本、新增 33,533 行</td><td><span class="tag m">中</span></td></tr>
+  <tr><td class="n">4</td><td>十天的开发速度</td><td>—</td><td>10-18 到 10-27：48 个提交、30 个版本、新增约 7.4 万行</td><td><span class="tag m">中</span></td></tr>
+  <tr><td class="n">5</td><td>我们上线更新日志的第二天，他也有了</td><td>10-19 新增「更新日志」 <span class="src">app 更新日志</span></td><td>10-20 的 1.8.0“What's new / 更新了什么”</td><td><span class="tag w">弱</span></td></tr>
+  <tr><td class="n">6</td><td>问题反馈</td><td>10-18 新增「问题反馈」 <span class="src">app 更新日志</span></td><td>10-25 的 1.9.3 出问题时发送错误日志</td><td><span class="tag w">弱</span></td></tr>
+</table>
+
+<h3>B. 相近功能（我方先公开，对方后出现）</h3>
+<table>
+  <tr><th class="n">#</th><th style="width:26%">功能</th><th style="width:33%">Narrascape</th><th>CicaTavern 首次出现</th><th style="width:30pt">强度</th></tr>
+  <tr><td class="n">7</td><td>每回合四个行动选项，其中一个不按常理出牌</td><td>8-25 定型（团队自述）；10-14 宣传片主打，第 4 个是越界选项，例如“把整碗热汤泼向那两道光柱”“当街喊出周鹤年寒潮后会死” <span class="src">宣传片</span>；配合时空裁判，被拦下时提示“可在游戏设置中调整或关闭主角行为限制” <span class="src">app</span></td><td>1.0.0 只能把卡片自带的选项显示成按钮；10-19 的 1.6.0 内置“四项…至少一项出人意料”；他宣传片里四个按钮样式相同，第 4 个是一句玩笑；产品里没有拦截器，也没有行为限制设置</td><td><span class="tag s">强</span></td></tr>
+  <tr><td class="n">8</td><td>回合插图：模型读剧情写画面提示</td><td>10-11 上线 <span class="src">app 更新日志</span>；10-14 一键生成插图 <span class="src">宣传片</span></td><td>10-18 的 1.0.0</td><td><span class="tag m">中</span></td></tr>
+  <tr><td class="n">9</td><td>插图照着角色的固定形象画，人物前后一致</td><td>10-12 <span class="src">app 更新日志</span></td><td>10-18 的 1.0.0（角色名册 + 人设图参考）</td><td><span class="tag m">中</span></td></tr>
+  <tr><td class="n">10</td><td>生成角色形象（头像 / 立绘）</td><td>10-11 头像和立绘一起生成 <span class="src">app 更新日志</span></td><td>1.0.0 人设图；10-20 立绘；10-22 生成头像</td><td><span class="tag m">中</span></td></tr>
+  <tr><td class="n">11</td><td>每个世界 / 每张卡统一画风</td><td>10-12 <span class="src">app 更新日志</span></td><td>10-18 的 1.0.0</td><td><span class="tag m">中</span></td></tr>
+  <tr><td class="n">12</td><td>一键朗读</td><td>10-14 画面里有朗读按钮 <span class="src">宣传片</span></td><td>10-18 的 1.0.0</td><td><span class="tag m">中</span></td></tr>
+  <tr><td class="n">13</td><td>生成任务后台跑完，关页面不中断</td><td>10-13 图片任务后台跑完 <span class="src">app 更新日志</span></td><td>10-18 的 1.0.0（回合在后台续写）</td><td><span class="tag m">中</span></td></tr>
+  <tr><td class="n">14</td><td>重画后保留旧版本，可以换回</td><td>10-17 历史形象回看、设为默认 <span class="src">app 更新日志</span></td><td>10-27 的 2.0.0“抽图历史”</td><td><span class="tag s">强</span></td></tr>
+  <tr><td class="n">15</td><td>角色形象写进记忆，叙事时参考长相</td><td>10-11 <span class="src">app 更新日志</span></td><td>10-18 的 1.0.0 角色名册（固定长相、衣着）</td><td><span class="tag m">中</span></td></tr>
+  <tr><td class="n">16</td><td>宣传片说法</td><td>标语“一起写小说吧~” <span class="src">宣传片</span></td><td>“自己进入一段故事 / 让每个故事都有人陪它写下去”</td><td><span class="tag w">弱</span></td></tr>
+  <tr><td class="n">17</td><td>冻结基线：固定前缀、只往后追加、会变的放最后</td><td>6-16 起，7-14 上线即在用 <span class="src">团队自述</span></td><td>10-18 的 1.0.0；宣传片当头号技术卖点（“前缀固定，只在末尾追加”）</td><td><span class="tag w">弱</span></td></tr>
+  <tr><td class="n">18</td><td>上下文用量表 + 超过上限自动整理 + 上限自己设</td><td>app「本轮处理摘要 → 上下文用量」：当前上下文 / 你设置的上下文窗口，下一回合会超出时才自动整理 <span class="src">app</span>；10-18 已修「完整上下文整理」 <span class="src">app 更新日志</span></td><td>10-27 21:42 的 2.0.3：用量 / 上限，到阈值变色，发下一轮前自动压缩，上限在设置里填（原仓库 d7974cb，fork 存档之后）</td><td><span class="tag m">中</span></td></tr>
+</table>
+
+<h3>C. 他的功能没有来历</h3>
+<table>
+  <tr><th class="n">#</th><th style="width:28%">可疑点</th><th style="width:31%">Narrascape</th><th>CicaTavern</th><th style="width:30pt">强度</th></tr>
+  <tr><td class="n">19</td><td>功能一出现就是成品，没有迭代过程</td><td>插图一个星期改了五轮（10-11、10-12、10-13、10-16、10-17），每轮写进更新日志 <span class="src">app 更新日志</span></td><td>插图、角色名册、人设图、画风、朗读、后台续写都在 1.0.0 一次提交里；配图和朗读代码 2,489 行，连 551 行测试一起写好</td><td><span class="tag s">强</span></td></tr>
+  <tr><td class="n">20</td><td>加功能没有理由</td><td>越界选项为了勾玩家撞拦截器、再去设置放开；朗读为了直播 <span class="src">团队自述 · app</span></td><td>四个行动选项在 1.6.0 里作为预设开关一行带过，没说为什么加、为什么是四个、为什么留一个“出人意料”</td><td><span class="tag m">中</span></td></tr>
+  <tr><td class="n">21</td><td>没有用户提过这些需求</td><td>—</td><td>issue 一共 4 条，最早 10-20：导入报错、要搜索、推荐接口、安全补丁；没人提过四选项、插图、固定形象</td><td><span class="tag m">中</span></td></tr>
+  <tr><td class="n">22</td><td>找不到更早的开发痕迹</td><td>—</td><td>GitHub 所有公开仓库里没有更早的 CicaTavern 记录；第一个版本一次提交 17,472 行</td><td><span class="tag m">中</span></td></tr>
+</table>
+
+<h3>D. 宣传上的问题</h3>
+<table>
+  <tr><th class="n">#</th><th style="width:28%">问题</th><th>依据</th></tr>
+  <tr><td class="n">23</td><td>宣传片里最大的“97% 缓存命中”，用户用不上</td><td>宣传片小字标着用的是 Claude Opus 5.5 官方订阅；README 写明 Claude 两行数据来自作者自用版本、走 Claude Code，另一处又写 Claude 订阅不能当 API Key 用；DeepSeek 那行只统计了 13 轮</td></tr>
+</table>
+
+<h3>E. 界面与文案对照（对比图另附）</h3>
+<table>
+  <tr><th class="n">#</th><th style="width:24%">对照点</th><th style="width:33%">Narrascape</th><th>CicaTavern</th><th style="width:30pt">强度</th></tr>
+  <tr><td class="n">24</td><td>「正在构思画面」一字不差</td><td>10-11 生成插图时显示「正在构思画面」→「正在绘制」</td><td>10-18 的 1.0.0：web/media.js 第 164 行「正在构思画面」→「正在画」</td><td><span class="tag s">强</span></td></tr>
+  <tr><td class="n">25</td><td>回合开头先标时间和地点</td><td>10-14 宣传片画面：「老城区沙县小吃店 · 第 1 日 · 清晨」</td><td>10-19 的 1.6.0「时间框」：时间 / 地点 / 天气</td><td><span class="tag m">中</span></td></tr>
+  <tr><td class="n">26</td><td>按回合撤回、重做、分支</td><td>6-16 存档点「撤回上一回合」「重做下一回合」；6-17「从此分支」（团队自述）</td><td>10-18：「撤回上一轮」（创作向导）、回滚、「分支到新对话」</td><td><span class="tag w">弱</span></td></tr>
+  <tr><td class="n">27</td><td>右栏放每轮处理数据</td><td>6-16「本轮处理摘要」；9-24 双窗口用量（团队自述）</td><td>10-18 的 1.0.0：右栏「上一轮」缓存命中、输出、耗时</td><td><span class="tag m">中</span></td></tr>
+  <tr><td class="n">28</td><td>整理上下文 ↔ 压缩上下文</td><td>9-25 超出窗口才自动整理；10-16「整理上下文」按钮（团队自述）</td><td>10-18「压缩上下文」按钮；10-27 自动压缩</td><td><span class="tag m">中</span></td></tr>
+  <tr><td class="n">29</td><td>建世界：字段与对话改</td><td>6-16 世界生成器「题材 / 基调」；6-17「AI 补全」；9-25「和 AI 一起改」“想怎么改？”（团队自述）</td><td>10-18 创作向导「基调」「向导补的」；10-22 对话修改“说说想怎么改”</td><td><span class="tag m">中</span></td></tr>
+</table>
+</div>
+
+
+</body>
+</html>

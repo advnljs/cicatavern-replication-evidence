@@ -1,0 +1,216 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<title>抄就抄了，别装原创</title>
+<style>
+  @page { size: A4; margin: 14mm 15mm 14mm 15mm; }
+  :root { --ink:#1f1a17; --muted:#6b625b; --line:#e3dad2; --accent:#b4532a; --soft:#f7efe8; --wild:#fbeaf0; }
+  * { box-sizing: border-box; }
+  body { margin:0; color:var(--ink); background:#fff; font: 10.2pt/1.66 "PingFang SC","Hiragino Sans GB","Songti SC",sans-serif; }
+  h1 { font-size: 22pt; line-height:1.3; margin: 0 0 4pt; letter-spacing:.5pt; }
+  .kicker { color: var(--accent); font-weight:600; font-size: 10pt; letter-spacing: 1pt; margin-bottom: 4pt; }
+  .sub { color:var(--muted); font-size:9.5pt; margin-bottom:12pt; }
+  h2 { font-size: 13.5pt; margin: 18pt 0 6pt; padding-left: 8pt; border-left: 4pt solid var(--accent); page-break-after: avoid; }
+  h3 { font-size: 11.5pt; margin: 12pt 0 4pt; page-break-after: avoid; }
+  p { margin: 5pt 0; }
+  ul, ol { margin: 4pt 0 6pt; padding-left: 18pt; }
+  li { margin: 2pt 0; }
+  b, strong { color:#000; }
+  .lead { font-size: 12pt; background: var(--soft); border-radius: 6pt; padding: 10pt 12pt; margin: 10pt 0; }
+  .punch { font-size: 12pt; font-weight: 700; margin: 10pt 0; }
+  .ph { background:#fff3b0; padding: 0 3pt; border-radius:3pt; }
+  table { width:100%; border-collapse: collapse; margin: 6pt 0 8pt; font-size: 9pt; line-height:1.55; }
+  tr { page-break-inside: avoid; }
+  th, td { border: .6pt solid var(--line); padding: 4pt 6pt; vertical-align: top; text-align:left; }
+  th { background: var(--soft); font-weight: 600; }
+  .src { display:inline-block; padding: 0 4pt; border:.6pt solid var(--line); border-radius: 4pt; font-size: 7.5pt; color: var(--muted); white-space:nowrap; }
+  .wild { background: var(--wild); border-radius: 3pt; padding: 0 3pt; font-weight: 600; }
+  figure { margin: 8pt 0 10pt; page-break-inside: avoid; }
+  figure img { width: 100%; border: .6pt solid var(--line); border-radius: 4pt; display:block; }
+  figcaption { color: var(--muted); font-size: 8.5pt; margin-top: 3pt; }
+  .note { color: var(--muted); font-size: 8.5pt; }
+  .box { border: .8pt solid var(--line); border-radius: 6pt; padding: 8pt 11pt; margin: 8pt 0; page-break-inside: avoid; }
+  .end { margin-top: 14pt; font-weight: 700; font-size: 12pt; }
+</style>
+</head>
+<body>
+
+<div class="kicker">NARRASCAPE 声明</div>
+<h1>抄就抄了，别装原创</h1>
+<div class="sub">关于 CicaTavern · Narrascape 团队 · 2026 年 10 月 27 日 · narrascape.space</div>
+
+<p>我们是 Narrascape，做 AI 跑团、互动小说的小团队，网页打开就能玩。这个点子我们前期琢磨了几年；从今年 6 月起，关起门做了小半年，一直没宣传。<b>10 月 14 日，我们第一次发宣传片。6 天后（10 月 20 日前后），同样的卖点就出现在了小红书上。</b></p>
+<p>先说结论：</p>
+<div class="lead"><b>我们认为 CicaTavern 抄了 Narrascape。</b>不是抄代码，是抄功能、抄卖点，连我们的恶趣味都照着抄走了，却不知道这恶趣味是干什么用的。</div>
+<p>先说清楚材料来源：</p>
+<ul>
+  <li><b>我们自己的开发经过：</b>团队自述。</li>
+  <li><b>拿来对比的证据：</b>只用公开的东西。我们这边是 10 月 14 日发布的第一支宣传片，和 narrascape.space 顶栏 ✦ 里的更新日志；他那边是他在小红书上的宣传笔记和宣传片，以及他公开的代码仓库、提交记录、README 和 issue（后文逐一截图）。</li>
+</ul>
+<p>逐条对照放在另一份《CicaTavern 可疑点清单》里。</p>
+
+<h2>一、小半年 vs. 一个星期</h2>
+<p>算一下时间：</p>
+<ul>
+  <li>我们从 6 月 15 日到 10 月 17 日，四个多月，才把这一整套一项项做出来。</li>
+  <li>我们宣传片发出四天后，他的第一版放了出来；第五天，他补上了四个选项。</li>
+  <li>他的整个公开记录只有十天：30 个版本，7 万多行。光 10 月 18 日一天就是 20 个提交、6 个版本，安卓 App、exe 启动器、应用内更新都是同一天出的。</li>
+</ul>
+<p>他大概会说“早就写好了”。可是：</p>
+<ul>
+  <li>他 GitHub 上所有公开仓库里，找不到任何更早的 CicaTavern 开发痕迹；</li>
+  <li>第一个版本一次提交就是 17,472 行的成品，没有一行开发过程。</li>
+</ul>
+<p>拿不出来的“早就写好”，就等于没有。</p>
+<p>他的提交记录我们已经 fork 存档：原仓库 github.com/Shikasar7/CicaTavern，存档 <b>github.com/advnljs/CicaTavern</b>，停在 2.0.2（提交 14a14e9，48 个提交）。文中引用的提交、版本都以这份为准，删了也没用。</p>
+<p>那就只剩一种解释：这一整套，是在我们宣传片发出后的一个星期左右里“想到”的。一个星期，想出我们小半年才磨出来的东西，而且像到这个地步，连一个他根本用不上的越界选项都有。这不可能。</p>
+<p class="punch">要么他是天才，正好在同一个月想到了我们的一整套；要么他看过答案。我们倾向于后者。不服的话，拿出 10 月 18 日之前的开发记录。拿不出来，就别再说是巧合。</p>
+
+<h2>二、他的功能，没有来历</h2>
+<p>我们的功能是一点点长出来的。他的功能是凭空出现的，一出现就是成品。</p>
+<ul>
+  <li><b>插图、角色名册、人设图、画风、朗读、后台续写，</b>全都在 10 月 18 日的 1.0.0 那一次提交里一起冒出来：光配图和朗读的代码就有 2,489 行，连 551 行的测试都一起写好了。第一次出现就是完整的成品，没有“先做个简单的，再一点点改”的过程。</li>
+  <li><b>四个行动选项，</b>10 月 19 日在 1.6.0 里作为预设的一个开关一行带过，没说为什么要加，也没说为什么偏偏是四个、为什么要留一个“出人意料”的。</li>
+  <li><b>他的 issue 区，</b>到今天一共 4 条，最早一条是 10 月 20 日：一个导入报错、一个要搜索功能、一个推荐接口、一个安全补丁。没有一个用户提过要四个选项、要插图、要固定形象。</li>
+</ul>
+<p>没有用户要，没有试错，没有理由，一上来就是完整的一套，而且这一套跟我们像到这个地步。</p>
+<p class="punch">一个功能没有来历，只有两种可能：要么是天上掉下来的，要么是照着别人的成品做的。</p>
+<p>没有迭代，没有理由，一次到位。这不叫开发，叫照着答案交卷。</p>
+
+<h2>三、七个卖点，每一项都是我们先</h2>
+<table>
+  <tr><th style="width:24%">功能</th><th style="width:40%">Narrascape（公开时间，更新日志原话）</th><th>CicaTavern（第一次出现）</th></tr>
+  <tr><td>每回合四个选项，带一个越界的</td><td>8-25 定型（团队自述）；10-14 宣传片主打 <span class="src">宣传片</span></td><td>10-19 的 1.6.0</td></tr>
+  <tr><td>回合插图</td><td>10-11 “新增回合插图……改为每个回合下方的按钮按需生成” <span class="src">更新日志</span></td><td>10-18 的 1.0.0</td></tr>
+  <tr><td>角色有固定形象，插图照着画</td><td>10-11 “头像与立绘一起生成，风格一致”<br>10-12 “插图会参考角色自己的形象，并按场景描述人物的位置与大小，人物前后更一致” <span class="src">更新日志</span></td><td>10-18 的 1.0.0：角色名册存人设图，画图照着画，多人同框不串脸。立绘 10-20 才有，生成头像 10-22 才有</td></tr>
+  <tr><td>统一画风</td><td>10-12 “每个世界使用统一画风” <span class="src">更新日志</span></td><td>10-18 的 1.0.0：每张卡自己的画风</td></tr>
+  <tr><td>一键朗读</td><td>9-6 上线（团队自述）；10-14 宣传片画面里就有朗读按钮 <span class="src">宣传片</span></td><td>10-18 的 1.0.0</td></tr>
+  <tr><td>后台跑完，关页面不中断</td><td>10-13 “图片任务改在后台跑完，关掉页面也不会中断” <span class="src">更新日志</span></td><td>10-18 的 1.0.0：切走、刷新，这一轮照样在后台写完</td></tr>
+  <tr><td>重画之后，旧的还能换回来</td><td>10-17 “历史形象可以回看，也可以设为默认” <span class="src">更新日志</span></td><td>10-27 的 2.0.0“抽图历史”</td></tr>
+</table>
+<p>我们领先的时间长短不一：插图、形象这几项领先几天，朗读领先六周，越界选项领先近两个月，冻结基线领先四个月。他的却全挤在一起，全部出现在我们 10 月 14 日宣传片之后的 4 到 13 天里。</p>
+<p>单拿哪一项出来，都能说一句“这功能大家都有”。可撞车撞一次是巧合，<b>撞七次，那是导航直接设成了我们家。</b></p>
+<p>连更新日志都只慢一天：我们 10-19 在顶栏上线，他 10-20 就有了“更新了什么”。</p>
+
+<h2 style="page-break-before: always">四、我们的每个功能，都有来历</h2>
+<table>
+  <tr><th style="width:15%">时间</th><th style="width:36%">做了什么</th><th>为什么做</th></tr>
+  <tr><td>此前几年</td><td>构思：让 AI 自己跑一个会动的世界，玩家可以越界、可以被拦</td><td>团队自述</td></tr>
+  <tr><td>6 月 15 日</td><td>项目第一天：每回合给选项；“时空裁判”和「主角行为限制」设置</td><td>故事要有分寸。你想瞬移、秒杀、做超出能力的事，裁判会拦下来，拦多严由你在设置里定</td></tr>
+  <tr><td>6 月 16 日</td><td>冻结基线：开局把设定冻结成一份固定基线，之后只往后追加，每轮会变的东西放在最后；几句话让 AI 生成一个完整世界</td><td>前者为了每轮都命中缓存，省钱、出字快；后者让人不用先写一大堆设定就能开局</td></tr>
+  <tr><td>7 月 14 日</td><td>网站上线，没做任何宣传</td><td>先给少数人玩，边玩边改</td></tr>
+  <tr><td>8 月 25 日</td><td>越界选项定型：前三个正常，第四个专门越界</td><td>勾着玩家去撞拦截器，再引导他们去设置里把限制放开（下一节细说）</td></tr>
+  <tr><td>9 月 6 日</td><td>自动朗读</td><td>直播要用：主播一边玩，一边让剧情念出来，观众跟着听</td></tr>
+  <tr><td>10 月 11 日—17 日</td><td>回合插图、角色形象、插图照着形象画、统一画风、后台跑完不中断、历史形象可以换回</td><td>一个星期改了五轮，每一轮改了什么、为什么改，都写在更新日志里</td></tr>
+  <tr><td>10 月 14 日</td><td><b>第一次公开发宣传片</b></td><td>6 天后，同样的卖点上了小红书</td></tr>
+</table>
+<p>光是插图这一块，更新日志里就能看到它是怎么一步步长出来的：</p>
+<ul>
+  <li><b>10-11：</b>先上线回合插图，当天就改成每个回合下面一个按钮，想要再生成。</li>
+  <li><b>10-12：</b>插图开始参考角色自己的形象，人物前后一致；每个世界统一画风；出图繁忙时自动排队；偶尔被安全检查拒绝时自动重试。</li>
+  <li><b>10-13：</b>图片任务改到后台跑完，关页面也不中断；画完的插图可以重绘。</li>
+  <li><b>10-16：</b>图片缓存在本机，再打开更快；角色列表里的头像放大。</li>
+  <li><b>10-17：</b>角色形象有了多个版本，旧的可以回看、换回。</li>
+</ul>
+<p>先做出来，看玩家怎么用，哪里不顺改哪里。<b>功能是这么长出来的。</b></p>
+
+<h2>五、越界选项：他连为什么都不知道，就照着画了</h2>
+<p>Narrascape 有一个拦截器，叫时空裁判。你让主角做超出能力、违反世界设定的事，它会拦下来：这一回合不算，弹窗告诉你为什么，最后加一句提示，“可在游戏设置中调整或关闭主角行为限制”。设置里有四档：严格、标准、宽松，还有完全不受限。</p>
+<p>越界选项就是冲着这个拦截器设计的。前三个选项是正常的路，<b>第四个故意越界</b>，是你这会儿最想干、但平时不敢干的那件事：</p>
+<ul>
+  <li>点下去，有时候成了，故事一下子炸开；</li>
+  <li>有时候被裁判拦下，弹窗告诉你：嫌拦得太严，可以去设置里放开。</li>
+</ul>
+<p>它的用处就是勾着玩家去撞拦截器，撞多了，自然会去设置里把限制调松，甚至调成不受限，然后发现这个世界能陪你玩到多疯。这是我们宣传片里笑得最多的地方：</p>
+<figure>
+  <img src="our-choices.jpg" alt="Narrascape 宣传片画面：四个行动选项，第 4 个越界选项以粉色单独标出">
+  <figcaption>Narrascape 10 月 14 日宣传片。左边第 4 个：<span class="wild">把整碗热汤泼向那两道光柱</span>；右边第 4 个：<span class="wild">当街喊出周鹤年寒潮后会死</span>。同一画面里还有回合插图和朗读按钮。</figcaption>
+</figure>
+<p>再看他：</p>
+<ul>
+  <li><b>10 月 18 日，1.0.0：</b>没有自己的选项功能，只会把角色卡里自带的选项显示成按钮。</li>
+  <li><b>10 月 19 日，我们宣传片发出后第五天：</b>突然加上内置的“四个行动选项”，提示词里写着“四项方向各不相同，至少一项出人意料”。</li>
+</ul>
+<p>固定四个，其中一个专门不按常理出牌。这就是我们的越界选项，换了个说法而已。</p>
+<p class="punch">问题是：他的 CicaTavern 里根本没有拦截器。</p>
+<p>没有裁判，没有行为限制，也没有“去设置里放开”这一步，模型写什么就是什么。在他那里，一个“出人意料”的选项什么也撞不到，也没有什么可以解锁，就是个摆设。</p>
+<figure>
+  <img src="his-choices.jpg" alt="CicaTavern 宣传片画面：A 到 D 四个样式相同的选项">
+  <figcaption>CicaTavern 宣传片（约 00:38）。A 到 D 四个按钮一模一样，第 4 个“出人意料”的，是开个玩笑。</figcaption>
+</figure>
+<p class="punch">这就叫照猫画虎：我们的恶趣味是有用处的，是从拦截器里长出来的一环。他把样子抄走了，却不知道这个机制是怎么来的：没有拦截器，第四个选项就只是一个出格的按钮。</p>
+
+<h2>六、缓存：设计我们早就在用，数字用户用不上</h2>
+<p>他宣传片里当头号技术卖点的“前缀固定、只在末尾追加”，我们 6 月 16 日就这么做了，内部叫<b>冻结基线</b>：开局冻结一份基线，之后对话只往后追加，每轮会变的东西放在最后。</p>
+<p>他的做法也是这三段：固定前缀、往后追加、会变的放最后。我们 7 月上线时就在线上跑了，比他早三个月；到他那儿，成了宣传片里最响的卖点。</p>
+<h3>今晚他又跟了一项：上下文用量表和自动压缩</h3>
+<p>10 月 27 日 21:42，他发了 2.0.3：顶栏显示这段对话用了多少上下文、上限是多少，到了阈值，发下一轮之前先自动压缩，上限可以在设置里自己填。</p>
+<p>我们 app 的「本轮处理摘要」里，「上下文用量」这一项旁边写着：本回合实际发给模型的上下文 / 上下文窗口上限；超过上限时才会自动整理成长期记忆，保留最近一段；上限可在「游戏设置」里调整。</p>
+<table>
+  <tr><th style="width:18%"></th><th style="width:41%">Narrascape（app 里的原话）</th><th>CicaTavern 2.0.3</th></tr>
+  <tr><td>显示什么</td><td>“当前上下文 / 你设置的上下文窗口”</td><td>已用 / 上限，到阈值变色</td></tr>
+  <tr><td>用量从哪来</td><td>“模型接口返回的用量”：上次请求的输入 + 回复</td><td>上一轮实际算出来的 token</td></tr>
+  <tr><td>什么时候整理</td><td>“下一回合会超出窗口时才自动整理”</td><td>到阈值后，发下一轮之前先自动压缩</td></tr>
+  <tr><td>上限谁定</td><td>游戏设置里的“最大原始上下文窗口”</td><td>设置里给模型填的数</td></tr>
+  <tr><td>整理成什么</td><td>长期记忆，保留最近一段</td><td>剧情存档，带着最近几轮接着写</td></tr>
+</table>
+<p>我们的上下文整理，10 月 18 日的更新日志里已经修过一轮。他到 10 月 27 日晚上才补上。换了几个词，意思一样。抄作业还知道改改措辞。</p>
+<p class="note">2.0.3 在我们 fork 存档之后发布，原仓库提交 d7974cb；这一版的说明我们另行存证。</p>
+<p>再看那个数字。他宣传片里最显眼的是“缓存命中实测可高达 97%”，下面一行小字标着用的是 Claude Opus 5.5 的官方订阅。</p>
+<p>去翻他的 README：</p>
+<ul>
+  <li>Claude 那两行数据，来自作者<b>自用的版本</b>，走的是 Claude Code；</li>
+  <li>同一份 README 另一处写着：Claude 的订阅<b>不能当 API Key 用</b>；</li>
+  <li>表里 DeepSeek 那行同样写着 97%，一共统计了 13 轮。</li>
+</ul>
+<p>说人话：宣传片上最大的那个数字，是在一个 CicaTavern 用户根本用不了的环境里测出来的。功能抄得快，数字也敢挑好看的放。</p>
+
+<h2>七、别急着甩代码对比</h2>
+<p>我们从头到尾没说他抄代码。他的代码我们看了，技术栈不一样，写得也挺勤快。</p>
+<p>可现在换个技术栈重写一遍，谁都会。值钱的从来不是代码，是想法：做什么、为什么做、先做哪个。这些东西十月中旬就摆在我们的宣传片和 app 里，谁都看得见，他也看得见。</p>
+<p>他抄走的是皮，抄不走的是每个功能背后的“为什么”：</p>
+<ul>
+  <li>越界选项，是为了勾玩家去撞拦截器，再去设置里放开；</li>
+  <li>朗读，是因为直播要用；</li>
+  <li>插图，是一个星期改了五轮才改顺的。</li>
+</ul>
+<p>他只抄了按钮。</p>
+<p class="punch">说白了，这是抄作业：答案抄得飞快，题目一道没看懂。越界选项是为拦截器出的题，他抄走了答案，题目还留在我们这儿。</p>
+
+<h2>八、给个说法</h2>
+<ol>
+  <li>第一个版本一次提交就是 17,472 行的成品。10 月 18 日之前的开发记录在哪？拿得出来吗？</li>
+  <li>1.0.0 没有内置四个选项，10 月 19 日才加上，还专门留一个“出人意料”的。一个没有拦截器的产品，要这个选项干什么？这和我们 10 月 14 日的宣传片，到底有没有关系？</li>
+  <li>做这一整套之前，你玩没玩过 narrascape.space，看没看过我们的宣传片？</li>
+</ol>
+<p>抄了就认，在 README 里写一句“灵感来自 Narrascape”，这事就算过去了。参考别人不丢人，装不认识才丢人。</p>
+<p>做独立开发的都知道，一个功能从想到、做出来、调顺、拍成视频，要熬多少个晚上。几天后它换了个名字，成了别人宣传片里的卖点，还对着同一批玩家吆喝“更省心”。这口气我们咽不下。</p>
+<p class="end">原创不怕对比。两边都去玩一把，点一下第四个选项，看看会不会被拦、拦下来之后会发生什么。谁是原版，谁是照着描的，一点就知道。</p>
+<p class="note">Narrascape · narrascape.space</p>
+
+<div style="page-break-before: always"></div>
+<h2>附：截图证据</h2>
+<p class="note">以下截图均取自他公开的 GitHub 页面和宣传片，2026 年 10 月 27 日截取。GitHub 按 UTC 时间分组，“Oct 17” 的 17:30 UTC 就是北京时间 10 月 18 日 01:30。</p>
+<h3>0. 他的小红书宣传笔记：10 月 20 日前后</h3>
+<figure><img src="his-xhs-note.png"><figcaption>10 月 27 日截图时标着“7 天前”。</figcaption></figure>
+<h3>1. 第一笔提交：Initial commit 之后，紧接着就是 1.0.0</h3>
+<figure><img src="g1a-first-commits.png"><figcaption>最底下是 Initial commit（只有 LICENSE 和一行 README），紧接着 CicaTavern 1.0.0，同一天又连发几版。</figcaption></figure>
+<h3>2. 1.0.0：72 个文件、17,472 行，一次提交</h3>
+<figure><img src="g2-100-17472.png"><figcaption>插图、角色名册、画风、朗读、后台续写，全在这一笔里。</figcaption></figure>
+<h3>3. 10 月 19 日的 1.6.0：四个选项，“至少一项出人意料”</h3>
+<figure><img src="g3-basic-four-choices.png"><figcaption>server/basic.mjs 第 101–108 行。我们宣传片发出后第 5 天。</figcaption></figure>
+<h3>4. 10 月 27 日的 2.0.0 与 2.0.3：抽图历史、上下文用量表</h3>
+<figure><img src="g4-200-draw-history.png"></figure>
+<figure><img src="g5-203-context-meter.png"><figcaption>我们 10 月 17 日上线“历史形象可以回看、换回”；我们 app 里早就有上下文用量和自动整理。</figcaption></figure>
+<h3>5. README 里的 97%：作者自用版本，走 Claude Code</h3>
+<figure><img src="g6-readme-97.png"><figcaption>README 第 37–45 行。宣传片里最大的数字，出自这里。</figcaption></figure>
+<h3>6. 他宣传片里强调的卖点</h3>
+<figure><img src="his-video-endcard.jpg"><figcaption>片尾卖点：后台续写、缓存命中高、兼容酒馆角色卡、自带基础预设、原生状态栏、一键配图朗读、定制角色形象、引导式创卡。</figcaption></figure>
+<figure><img src="his-video-pictures-voices.jpg"><figcaption>“一键配图，一键朗读”</figcaption></figure>
+<figure><img src="his-video-cache97.jpg"><figcaption>“前缀固定，只在末尾追加”，缓存命中 97%</figcaption></figure>
+<h3>7. issue 区：一共 3 条 issue，没人提过这些需求</h3>
+<figure><img src="g7-issues.png"><figcaption>另有 1 个安全补丁 PR，合计 4 条。</figcaption></figure>
+
+</body>
+</html>
