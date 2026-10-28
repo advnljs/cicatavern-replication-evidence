@@ -4,7 +4,7 @@
 
 *About CicaTavern · the Narrascape team · October 27, 2026 · [narrascape.space](https://narrascape.space)*
 
-We are Narrascape, a small team making an AI tabletop / interactive-fiction game that runs in the browser. We spent years thinking about the idea. From June 2026 we built it behind closed doors for nearly half a year, with no promotion. **On October 14 we published our first promo video. Six days later (around October 20), the same selling points showed up on Xiaohongshu.**
+We are Narrascape, a small team making an AI tabletop / interactive-fiction game that runs in the browser. We have been exploring the idea in public since 2023 ([scripted-rpg](https://github.com/advnljs/scripted-rpg)). From June 2026 we built it behind closed doors for nearly half a year, with no promotion. **On October 14 we published our first promo video. Six days later (around October 20), the same selling points showed up on Xiaohongshu.**
 
 **Our conclusion: we believe CicaTavern copied Narrascape.** Not the code: the features and the selling points. Even our mischievous streak was copied, without any idea of what it is there for.
 
@@ -74,7 +74,7 @@ Even the changelog was only one day behind: ours went into the top bar on Octobe
 
 | When | What we built | Why |
 |---|---|---|
-| Years before | The idea: an AI that runs a living world, where players can cross the line and can be stopped | Team account |
+| From June 2023 | Public repo [scripted-rpg](https://github.com/advnljs/scripted-rpg): turns a story into a text RPG with a hidden truth, key plot points, world events the player cannot control, and Stable Diffusion illustrations | Exploring an AI that runs a living world, publicly verifiable |
 | Jun 15 | Day one: choices every turn; the space-time judge and the "action restriction" setting | Stories need limits. Teleporting, one-shot kills, things beyond your ability get stopped by the judge, and you decide how strict it is |
 | Jun 16 | Frozen baseline: the setup is frozen into a fixed baseline at the start, the conversation is append-only, and whatever changes each turn goes last. Plus: a full world from a few lines | The first hits the cache every turn, which is cheaper and faster; the second lets people start without writing pages of setup |
 | Jul 14 | Site launched, no promotion | Let a few people play and improve as we go |
