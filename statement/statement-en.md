@@ -1,3 +1,14 @@
+[← Current correction](../README.md) · [简体中文](../README.zh-CN.md)
+
+# Correction and apology — October 29, 2026
+
+**Current conclusion: the available evidence is insufficient to substantiate my accusation that CicaTavern plagiarized Narrascape.** I withdraw the definite copying and replication claims previously made in this repository, and I apologize for jumping to conclusions. Thank you to the author for responding and providing additional details. This does not establish that the author never saw Narrascape or that development was wholly independent.
+
+**The October 27 statement below is preserved only as a withdrawn historical draft.** Its conclusions are not our current position. In particular, the first public commit does not establish when private development began; the author's private-repository screenshots have not independently verified the date; community precedents exist for several features; and similarities alone cannot substantiate plagiarism. The linked historical PDFs and images remain unchanged and can still display withdrawn accusations.
+
+<details>
+<summary>Read the withdrawn October 27 statement and appendix</summary>
+
 [← Back to README](../README.md) · [中文 PDF](statement-zh.pdf) · [Suspicious points (EN)](../list/suspicious-points-en.md)
 
 # Copied, then called original
@@ -254,3 +265,6 @@ The nine side-by-side comparison cards (features and UI copy) are in [`../compar
 ![Issues](g7-issues.png)
 
 *Plus one security-patch pull request, 4 entries in all.*
+
+
+</details>

@@ -1,3 +1,14 @@
+[← Current correction](../README.md) · [简体中文](../README.zh-CN.md)
+
+# Correction: historical 29-point list
+
+**Current conclusion: the available evidence is insufficient to substantiate my accusation that CicaTavern plagiarized Narrascape.** I withdraw the definite copying and replication claims previously made in this repository, and I apologize for jumping to conclusions. Thank you to the author for responding and providing additional details. This does not establish that the author never saw Narrascape or that development was wholly independent.
+
+**The list and its “Strong/Medium/Weak” ratings below are historical and withdrawn, not current findings.** Key corrections and limits: the first full public commit is not the start of private development; the author showed screenshots of a private Git repository, but its full commit object and historical date have not been independently verified. SillyTavern community materials already contain precedents for action choices, time boxes, images and read-aloud. Matching short wording or the order in which features appeared does not by itself establish a source. Item 7 of the old list treated “at least one surprising” as a fixed fourth choice; item 13 compared a text turn that continues after closing with an image job; item 15 equated a roster used for drawing with dynamic narrative memory. These comparisons need correction. Related features cannot be multiplied as independent coincidences. The linked Chinese PDF is an unchanged historical artifact and may contain withdrawn claims.
+
+<details>
+<summary>Read the withdrawn historical list</summary>
+
 [← Back to README](../README.md) · [Statement (EN)](../statement/statement-en.md) · [中文 PDF](suspicious-points-zh.pdf)
 
 # CicaTavern: 29 suspicious points
@@ -68,3 +79,6 @@ Only items with a public basis are listed.
 | 27 | Per-turn processing data in the right panel | Jun 16 "turn process summary"; Sep 24 two-window usage (team account) | v1.0.0, Oct 18: right panel "last turn" with cache hit, output, timing | Medium |
 | 28 | "Consolidate context" ↔ "compress context" | Sep 25 automatic consolidation only when the window would overflow; Oct 16 "consolidate context" button (team account) | Oct 18 "compress context" button; Oct 27 automatic compaction | Medium |
 | 29 | World creation: fields and chat editing | Jun 16 world generator "genre / tone (基调)"; Jun 17 "AI autofill"; Sep 25 "refine with AI": "What should change? (想怎么改？)" (team account) | Oct 18 card creator "tone (基调)", "filled in by the guide"; Oct 22 chat editing: "tell me what to change (说说想怎么改)" | Medium |
+
+
+</details>

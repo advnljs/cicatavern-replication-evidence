@@ -1,5 +1,20 @@
 [English](README.md) | **简体中文**
 
+# 更正与致歉（2026 年 10 月 29 日）
+
+**现行结论：按照现有证据，不足以证明 CicaTavern 抄袭 Narrascape。** 我撤回此前在本仓库作出的确定性抄袭、复刻指控，并为过早下结论道歉。感谢作者的回应和补充资料。现有材料也不能证明作者从未参考 Narrascape 或开发完全独立；对此不作断言。
+
+重新核查后的主要限制：公开仓库的首个完整版提交不等于私下开发的起点；作者展示了私有仓库的 Git 截图，但其完整提交对象和历史日期尚未独立核验；SillyTavern 社区已有行动选项、时间框、配图和朗读等先例，相同短语或功能出现顺序不能单独证明来源。原清单第 7 项把“至少一项出人意料”误读为固定第四项；第 13 项把文字回合关页续写与图片任务关页继续相比；第 15 项把供绘图的角色名册等同于叙事动态记忆。这些比较需要更正，相关功能也不能作为彼此独立的巧合概率相乘。
+
+更正依据包括[作者回应](https://github.com/Shikasar7/CicaTavern/issues/4#issuecomment-6477278101)、[四选项规则](https://github.com/Shikasar7/CicaTavern/blob/48fa11bdfb9af6bda3614921208eb5c01524a705/server/basic.mjs#L100-L111)，以及首个公开版本的[文字回合](https://github.com/Shikasar7/CicaTavern/blob/cac0f965d3b68583f2ee73c536702a9d0823a7a9/server/http.mjs#L168-L178)、[图片请求](https://github.com/Shikasar7/CicaTavern/blob/cac0f965d3b68583f2ee73c536702a9d0823a7a9/server/http.mjs#L680-L714)和[叙事提示词](https://github.com/Shikasar7/CicaTavern/blob/cac0f965d3b68583f2ee73c536702a9d0823a7a9/server/prompt.mjs#L63-L105)代码路径。
+
+以下是 10 月 27 日发表的原始材料，保留供核查。**其中的指控与结论已经撤回，不应作为现行立场引用。** 历史 PDF 和图片不改动，可能仍包含已撤回的说法。
+
+<details>
+<summary>展开已撤回的历史声明与图片</summary>
+
+[English](README.md) | **简体中文**
+
 # 抄就抄了，别装原创：CicaTavern 与 Narrascape
 
 > **Narrascape 产品地址：[narrascape.space](https://narrascape.space)**，网页打开就能玩，不用安装。
@@ -227,3 +242,6 @@ CicaTavern 没有裁判，也没有行为限制设置，他的“出人意料”
 - 引用他仓库和视频的截图，用于评论与对比。
 
 — Narrascape · **[narrascape.space](https://narrascape.space)**
+
+
+</details>

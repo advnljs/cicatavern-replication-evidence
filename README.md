@@ -1,5 +1,20 @@
 **English** | [简体中文](README.zh-CN.md)
 
+# Correction and apology — October 29, 2026
+
+**Current conclusion: the available evidence is insufficient to substantiate my accusation that CicaTavern plagiarized Narrascape.** I withdraw the definite copying and replication claims previously made in this repository, and I apologize for jumping to conclusions. Thank you to the author for responding and providing additional details. This does not establish that the author never saw Narrascape or that development was wholly independent.
+
+Key corrections and limits: the first full public commit is not the start of private development; the author showed screenshots of a private Git repository, but its full commit object and historical date have not been independently verified. SillyTavern community materials already contain precedents for action choices, time boxes, images and read-aloud. Matching short wording or the order in which features appeared does not by itself establish a source. Item 7 of the old list treated “at least one surprising” as a fixed fourth choice; item 13 compared a text turn that continues after closing with an image job; item 15 equated a roster used for drawing with dynamic narrative memory. These comparisons need correction. Related features cannot be multiplied as independent coincidences.
+
+The corrections are grounded in the [author's response](https://github.com/Shikasar7/CicaTavern/issues/4#issuecomment-6477278101), the [four-choice rule](https://github.com/Shikasar7/CicaTavern/blob/48fa11bdfb9af6bda3614921208eb5c01524a705/server/basic.mjs#L100-L111), and the first public version's [text-turn](https://github.com/Shikasar7/CicaTavern/blob/cac0f965d3b68583f2ee73c536702a9d0823a7a9/server/http.mjs#L168-L178), [image-request](https://github.com/Shikasar7/CicaTavern/blob/cac0f965d3b68583f2ee73c536702a9d0823a7a9/server/http.mjs#L680-L714) and [narrative-prompt](https://github.com/Shikasar7/CicaTavern/blob/cac0f965d3b68583f2ee73c536702a9d0823a7a9/server/prompt.mjs#L63-L105) paths.
+
+The material below is the original October 27 statement, preserved for the record. **Its accusations and conclusions are withdrawn and should not be cited as our current position.** Historical PDFs and images are preserved unchanged and may contain those withdrawn claims.
+
+<details>
+<summary>Read the withdrawn historical statement and images</summary>
+
+**English** | [简体中文](README.zh-CN.md)
+
 # Copied, then called original: CicaTavern vs. Narrascape
 
 > **Try Narrascape: [narrascape.space](https://narrascape.space)**. It runs in the browser, no install, and has an English interface (EN in the top bar).
@@ -235,3 +250,6 @@ Learning from others is no shame. Pretending not to know them is.
 - Screenshots of his repository and videos are included for commentary and comparison.
 
 — Narrascape · **[narrascape.space](https://narrascape.space)**
+
+
+</details>
